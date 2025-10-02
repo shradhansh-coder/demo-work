@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Mitra</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo tree.jpg" alt="Logo"> <h1>Krishi Mitra</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Crop">Crop</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#market">Market</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Empowering Farmers with AI-Driven Insights</h2> <!-- Empowering Farmers with Smart Technology-->
+                <p>Get personalized crop advice, weather forecasts, and market prices tailored for small and marginal farmers.</p>         <!-- Empowering Farmers with Smart Technology-->      
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Crop Advice</button> 
+                    <button class="btn btn-primary">Check On AI </button>
+                   <!--button -->
+                 </div>
+                <div class="hero-image">
+                <img src="image2.png.avif" alt="Farmer using smartphone in a field"><h1>image of formers</h1>
+             
+            </div>
+        </section>
+
+     <section class="form-section">
+             <h2>Get Personalized Crop Advice</h2>
+             <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="crop">Select Crop</label>
+                        <select id="crop" name="crop">
+                            <option value="">Choose your crop</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="rice">Rice</option>
+                            <option value="corn">Corn</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="location">Location/Village</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your location">
+                    </div>
+                     <div class="form-group">
+                        <label for="soil">Soil Type</label>
+                        <select id="soil" name="soil">
+                            <option value="">Select soil type</option>
+                            <option value="alluvial">जलोढ़ ममट्टी</option>
+                            <option value="clay">काली ममट्टी</option>
+                            <option value="sandy">लाल ममट्टी</option>
+                            <option value="sandy">वन और पवणतीय ममट्टी</option>
+                            <option value="sandy">शष्ुक और रेचगस्तानी ममट्टी</option>
+                            <option value="sandy">लवणीय और क्षारीय ममट्टी</option>
+                            <option value="soil">लैटेराइट और लैटेराइट ममट्टी</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="stage">Current Crop Stage</label>
+                        <select id="stage" name="stage">
+                            <option value="">Select growth stage</option>
+                            <option value="seeding">Seeding</option>
+                            <option value="vegetative">Vegetative</option>
+                            <option value="flowering">Flowering</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                     <label for="issues">Any specific issues? (Optional)</label>
+                     <textarea id="issues" placeholder="Describe any problems you're facing with your crops..."></textarea>
+                </div>
+                 <button type="submit" class="btn btn-submit">Advice with Krishi Mitra</button>
+             </form>
+        </section>
+
+        <section id="weather" class="weather-section">
+            <h2>Weather Forecast</h2>
+            <div class="weather-cards">
+                <div class="weather-card">
+                    <p>Today</p>
+                    <h3>28°C</h3>
+                    <p>Clear Sky</p>
+                </div>
+                <div class="weather-card">
+                    <p>Tomorrow</p>
+                    <h3>26°C</h3>
+                    <p>Partly Cloudy</p>
+                </div>
+                <div class="weather-card">
+                    <p>Day 3</p>
+                    <h3>24°C</h3>
+                    <p>Light Rain</p>
+                </div>
+                <div class="weather-card">
+                    <p>Day 4</p>
+                    <h3>25°C</h3>
+                    <p>Cloudy</p>
+                </div>
+                <div class="weather-card">
+                    <p>Day 5</p>
+                    <h3>27°C</h3>
+                    <p>Sunny</p>
+                </div>
+                <div class="weather-card">
+                    <p>Day 6</p>
+                    <h3>20°C</h3>
+                    <p>Sunny</p>
+                </div>
+                <div class="weather-card">
+                    <p>Day 7</p>
+                    <h3>25°C</h3>
+                    <p>Sunny</p>
+                </div>
+            </div>
+             <div class="weather-alert">
+                <p><strong>Weather Alert:</strong> Light rainfall expected in the next 48 hours. Plan irrigation accordingly.</p>
+            </div>
+        </section>
+
+        <section id="market" class="market-section">
+            <h2>Market Prices</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Crop</th>
+                            <th>Market</th>
+                            <th>Price (₹/quintal)</th>
+                            <th>Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rice</td>
+                            <td>Local Mandi</td>
+                            <td>2,150</td>
+                            <td class="trend-up">↑ +3%</td>
+                        </tr>
+                        <tr>
+                            <td>Wheat</td>
+                            <td>Local Mandi</td>
+                            <td>1,980</td>
+                            <td class="trend-up">↑ +1%</td>
+                        </tr>
+                        <tr>
+                            <td>Corn</td>
+                            <td>Regional Market</td>
+                            <td>1,650</td>
+                            <td class="trend-up">↑ +2%</td>
+                        </tr>
+                        <tr>
+                            <td>Cotton</td>
+                            <td>State Market</td>
+                            <td>6,800</td>
+                            <td class="trend-stable">- Stable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="price-update-info">Prices updated: Today, 10:30 AM</p>
+            <button class="btn btn-primary">Refresh Prices</button>
+        </section>
+    </main>
+<section> 
+        <h2>Our Services</h2>
+         <div class="service-cards">
+        <div class="card" id="card-1">
+            <div class="card-header" data-accordion-toggle="#content-1">
+                <div class="card-icon">☁</div>
+                <h3>Smart Crop Advisory</h3>
+            </div>
+            <div class="accordion-content" id="content-1">
+                <p>Get personalized recommendations for crop selection, planting, and management based on your soil and location.</p>
+                <a href="#">Get Advice →</a>
+            </div>
+        </div>
+         <div class="card" id="card-2">
+             <div class="card-header" data-accordion-toggle="#content-2">
+                 <div class="card-icon">🌦</div>
+                 <h3>Weather Forecast</h3>
+             </div>
+             <div class="accordion-content" id="content-2">
+                 <p>Access accurate 7-day weather forecasts and alerts to plan your farming activities effectively.</p>
+                 <a href="#">View Forecast →</a>
+             </div>
+            </div>
+            <div class="card" id="card-3">
+              <div class="card-header" data-accordion-toggle="#content-3">
+                 <div class="card-icon">📈</div>
+                 <h3>Market Prices</h3>
+             </div>
+             <div class="accordion-content" id="content-3">
+                <p>Stay updated with real-time market prices and trends to get the best value for your produce.</p>
+                <a href="#">Check Prices →</a>
+            </div>
+        </div>
+       </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Smart Crop Advisor</h4>
+                <p>Empowering small and marginal farmers with technology-driven agricultural solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="#market">Market</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h4>Support</h4>
+                 <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+             <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <p>Facebook | Twitter | Instagram</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Smart Crop Advisor(codium turma). All Rights Reserved.</p>
+        </div>
+    </footer>
+      <script src="scirpt.js"></script>
+</body>
+</html>
